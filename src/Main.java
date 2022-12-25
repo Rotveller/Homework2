@@ -1,11 +1,10 @@
 public class Main {
     public static void main (String[] args) {
         System.out.println("Task №1");
-        double dog= 8;
+        var dog = 8.0;
+        double dog2;
         var cat = 3.6;
         var paper = 763789;
-        var friend = 19;
-        var frog = 3.5;
         System.out.println(dog);
         System.out.println(cat);
         System.out.println(paper);
@@ -17,15 +16,48 @@ public class Main {
         paper = paper + 4;
         System.out.println(paper);
         System.out.println("Task №3");
-        dog = dog - 3,5;
-        System.out.println(dog);
+        dog2 = dog - 3.5;
+        System.out.println(dog2);
         cat = cat - 1.6;
         System.out.println(cat);
         paper = paper - 7639;
         System.out.println(paper);
         System.out.println("Task №4");
-        System.out.println((friend + 2)/7);
+        var friend = 19;
+        System.out.println(friend);
+        friend = friend + 2;
+        System.out.println(friend);
+        friend = friend / 7;
+        System.out.println(friend);
         System.out.println("Task №5");
-        System.out.println(frog * 10/7+4);
+        var frog = 3.5;
+        System.out.println(frog);
+        frog = frog * 10;
+        System.out.println(frog);
+        frog = frog / 3.5;
+        System.out.println(frog);
+        frog = frog + 4;
+        System.out.println(frog);
+        System.out.println("Task №6");
+        var weightFirstMen = 78.2;
+        var weightSecondMen = 82.7;
+        var totalWeight = weightFirstMen + weightSecondMen;
+        System.out.println(totalWeight);
+        var differenceBetweenWeight = weightSecondMen - weightFirstMen;
+        System.out.println("Разница между бойцами " + differenceBetweenWeight + " кг! ");
+        System.out.println("Task №7");
+        var differenceBetweenWeight2 = weightSecondMen - weightFirstMen;
+        System.out.println("Разница между бойцами " + differenceBetweenWeight2 + " кг! ");
+        var differenceBetweenWeight3 = weightSecondMen % weightFirstMen;
+        System.out.println("Разница между бойцами " + differenceBetweenWeight3+ " кг! ");
+        System.out.println("Task №8");
+        var totalHours = 640;
+        var worker1 = 8;
+        var totalEmployees = totalHours / worker1;
+        System.out.println("Всего работников в компании " + totalEmployees + " человек! ");
+        var totalEmployees2 = totalEmployees + 94;
+        var totalEmployees3 = totalEmployees2  * 8;
+        System.out.println("Если в компании работает " + totalEmployees2 + " человек, то всего "
+                + totalEmployees3 +" часов работы может быть поделено между сотрудниками ");
     }
 }
